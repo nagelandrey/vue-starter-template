@@ -9,5 +9,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  plugins: [vue(), svgLoader({ defaultImport: 'component' })],
+  plugins: [
+    vue({ script: { defineModel: true } }),
+    svgLoader({ defaultImport: 'component' }),
+  ],
 })
