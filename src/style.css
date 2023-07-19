@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('@/assets/fonts/Rubik-Regular.ttf');
+    src: local('Rubik Regular'), local('/fonts/Rubik-Regular'),
+    url('@/assets/fonts/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('@/assets/fonts/Rubik-Medium.ttf');
+    src: local('Rubik Medium'), local('/fonts/Rubik-Medium'),
+    url('@/assets/fonts/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@layer base {
+    html {
+        font-family: Rubik, sans-serif;
+    }
+}
